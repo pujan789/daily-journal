@@ -6,9 +6,14 @@
 
 <% posts.forEach(post => { %>
 <h1><%= post.title %></h1>
-<p><%= post.content.slice(0,99) + "..."%></p>
 
-<% }) %> 
+<% if (post.content.length > 100) { %>
+    <p><%= post.content.slice(0,99) + "..."%> <a href="/posts/<%= post.title %>">Read more</a></p>
+<% } else  { %>
+    <p><%= post.content%></p>
+
+    <% } %>
+<% }) %>
 
 
 <%- include partials/footer.ejs %>
