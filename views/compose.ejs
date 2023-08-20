@@ -1,0 +1,18 @@
+<%- include partials/header.ejs %>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" name="postTitle" size="100%" />
+    </div>
+    
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+        <textarea class="form-control" name="postBody" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="mt-4 btn btn-primary">Publish</button>
+    </form>
+
+<%- include partials/footer.ejs %>
