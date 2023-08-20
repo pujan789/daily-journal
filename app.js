@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import ejs from "ejs"; // Import EJS package
+import _ from 'lodash';
+
 
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -23,7 +25,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let posts = []
 
 app.get('/', (req, res) => {
-  console.log(posts)
   res.render('home.ejs', {startingContent: homeStartingContent,posts:posts});
  });
 
@@ -50,7 +51,13 @@ app.post('/compose', (req, res) => {
 
 
 app.get('/posts/:postName', (req, res) => {
-  res.send(req.params.postName);
+  const requestedTitle = _.lowerCase(req.params.postName);
+  posts.forEach(post => {
+    if (requestedTitle === _.lowerCase(post.title)){
+      res.render("post.ejs", {title: post.title, content: post.content})
+    }
+  });
+  res.redirect("/");
   });
 
 
