@@ -9,17 +9,18 @@ This is a simple web application for a daily journal. Users can compose, view, a
 - **About Page:** Provides information about the project.
 - **Contact Page:** Displays contact information.
 
+
+## Usage
+Visit `https://daily-journal-wzxj.onrender.com/` in your web browser to access the application.
+**Note: It might take some time to render the website.**
+
+
 ## Installation
 
 1. Clone the repository:
 
    ```bash
    git clone <repository-url>
-
-## Usage
-Visit `https://daily-journal-wzxj.onrender.com/` in your web browser to access the application.
-**Note: It might take some time to render the website.**
-
 
 
 ## Routes
