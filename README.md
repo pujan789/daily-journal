@@ -21,20 +21,20 @@ Visit `https://daily-journal-wzxj.onrender.com/` in your web browser to access t
 
 
 
-Routes
-Home: http://localhost:3000/
+## Routes
+Home: http://localhost:3000/ or https://daily-journal-wzxj.onrender.com/
 
 Displays a list of journal entries.
-About: http://localhost:3000/about
+About: /about
 
 Provides information about the website.
-Contact: http://localhost:3000/contact
+Contact: /contact
 
 Displays contact information.
-Compose: http://localhost:3000/compose
+Compose: /compose
 
 Allows users to compose new journal entries.
-View a Specific Post: http://localhost:3000/posts/:postName
+View a Specific Post: /posts/:postName
 
 Displays a specific journal entry based on the post name.
 
