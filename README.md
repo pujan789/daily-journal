@@ -18,6 +18,7 @@ This is a simple web application for a daily journal. Users can compose, view, a
 
 ## Usage
 Visit `https://daily-journal-wzxj.onrender.com/` in your web browser to access the application.
+**Note** It might take some time to render the website.
 
 
 
